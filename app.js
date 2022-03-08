@@ -4,7 +4,7 @@ const cron = require('node-cron');
 //const mailer = require('nodemailer');
 
 // Schedule a task to run every minute.
-//cron.schedule('* * * * *', () => {console.log("Task is running every minute")});
+cron.schedule('* * * * *', () => {console.log("Hello")});
 const app = express()
 const port = 5000
 
