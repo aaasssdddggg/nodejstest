@@ -29,18 +29,20 @@ app.use('/article', newsRouter)
 app.listen(process.env.PORT ||port, () => console.log(`Listening on port ${port}`))
 console.log("Task is running every minute")
 
+
+
 while(true)
 {
-  //cron.schedule('* * * * *', () => {console.log("Hello2")});
-  async function init() {
-  console.log(1);
-  await sleep(2000);
-  console.log(2);
-}
+console.log("Hello");
+sleep(10000).then(() => {
+    console.log("World!");
+})
+
 
 function sleep(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
+}
+
+
 }
