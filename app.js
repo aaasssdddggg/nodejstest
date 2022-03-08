@@ -34,7 +34,7 @@ console.log("Task is running every minute")
 while(true)
 {
 console.log("Hello");
-sleep(10000).then(() => {
+sleep(20000).then(() => {
     console.log("World!");
 })
 
