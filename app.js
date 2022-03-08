@@ -30,5 +30,7 @@ app.listen(process.env.PORT ||port, () => console.log(`Listening on port ${port}
 console.log("Task is running every minute")
 
 while(true)
-{cron.schedule('* * * * *', () => {console.log("Hello2")});
+{
+  //cron.schedule('* * * * *', () => {console.log("Hello2")});
+  console.log("hi");
 }
